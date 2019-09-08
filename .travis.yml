@@ -3,8 +3,8 @@ language: node_js
 node_js: stable
 
 install:
-  - yarn global add vuepress
-  - yarn install
+  - npm --registry https://registry.npmjs.org/ install vuepress -g
+  - npm --registry https://registry.npmjs.org/ install
 
 before_script:
   - set -e
