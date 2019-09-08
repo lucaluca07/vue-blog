@@ -3,11 +3,13 @@ language: node_js
 node_js: stable
 
 install:
-  - npm install
+  - yarn install
 
+before_script:
+  - set -e
 script:
   # 生成静态文件
-  - npm run build
+  - yarn build
 after_script:
   # 进入生成的文件夹
   - cd docs/.vuepress/dist
