@@ -3,7 +3,7 @@ language: node_js
 node_js: stable
 
 install:
-  - yarn install -g vuepress
+  - yarn global add vuepress
   - yarn install
 
 before_script:
