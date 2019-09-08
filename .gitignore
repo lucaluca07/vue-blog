@@ -3,5 +3,6 @@ es
 lib
 dist
 .cache
+yarn.*
 yarn-error.*
 package-lock.*
