@@ -1,0 +1,29 @@
+language: node_js
+
+node_js: stable
+
+install:
+  - npm install
+
+# before_script:
+#   - git config user.email "liucannn@sina.com"
+#   - sed -i'' "s~https://github.com/volcanoliuc/volcanoliuc.github.io.git~https://${GITHUB_ACCESS_TOKEN}@github.com/volcanoliuc/volcanoliuc.github.io.git~" _config.yml
+script:
+  # 生成静态文件
+  - npm run build
+after_script:
+    # 进入生成的文件夹
+    - cd docs/.vuepress/dist
+
+    # 如果是发布到自定义域名
+    - echo 'blog.volc.top' > CNAME
+    - git init
+    - git config user.name "lemon" # 修改name
+    - git config user.email "liucannn@sina.com" # 修改email
+    - git add .
+    - git commit -m "Travis CI Auto Builder"
+    - git push --force --quiet "https://${GITHUB_ACCESS_TOKEN}@github.com/volcanoliuc/volcanoliuc.github.io.git" master:master
+branches:
+  only:
+    - master
+
