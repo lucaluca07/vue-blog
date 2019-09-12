@@ -5,8 +5,6 @@ node_js: stable
 install:
   - npm install -g vuepress
 
-  - npm install
-
 before_script:
   - npm config set registry https://registry.npmjs.org/
   - set -e
