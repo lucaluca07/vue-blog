@@ -1,6 +1,6 @@
 module.exports = {
-  title: 'Hello World',
-  description: 'Just playing around',
+  title: 'Lemon',
+  description: "Lemon's blog",
   theme: '@vuepress/blog',
   themeConfig: {
     nav: [
