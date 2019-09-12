@@ -3,11 +3,11 @@ language: node_js
 node_js: stable
 
 install:
+  - npm config set registry https://registry.npmjs.org/
   - npm install -g vuepress
   - npm install
 
 before_script:
-  - npm config set registry https://registry.npmjs.org/
   - set -e
 script:
   # 生成静态文件
