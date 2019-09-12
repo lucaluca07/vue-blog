@@ -11,7 +11,7 @@ before_script:
   - set -e
 script:
   # 生成静态文件
-  - npm run build
+  - vuepress build docs
 after_script:
   # 进入生成的文件夹
   - cd docs/.vuepress/dist
