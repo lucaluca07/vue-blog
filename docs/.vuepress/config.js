@@ -22,7 +22,7 @@ module.exports = {
       },
       {
         text: 'Github',
-        link: 'https://github.com/volcanoliuc',
+        link: 'https://github.com/lemon-lc',
       },
     ],
     modifyBlogPluginOptions(blogPlugnOptions) {
