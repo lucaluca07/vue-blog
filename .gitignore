@@ -1,7 +1,6 @@
-node_modules
 es
 lib
 dist
 .cache
-yarn.*
 yarn-error.*
+node_modules
