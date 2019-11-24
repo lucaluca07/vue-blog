@@ -4,3 +4,5 @@ dist
 .cache
 yarn-error.*
 node_modules
+package-lock.*
+yarn-lock.*
